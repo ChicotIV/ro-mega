@@ -1,0 +1,22 @@
+.eveniment {
+  position: relative;
+}
+.eveniment:before {
+  z-index: 100;
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  bottom: 0;
+  transition: height 0.2s;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    var(--text-color-dark) 100%
+  );
+}
+.eveniment:hover:before {
+  height: 100%;
+  z-index: 100;
+}

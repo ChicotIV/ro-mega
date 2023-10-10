@@ -1,0 +1,10 @@
+.hover {
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #4267b2;
+    /* padding: 1rem; */
+    border-radius: 50%;
+    color: green;
+  }
+}

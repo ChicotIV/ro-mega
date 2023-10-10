@@ -1,0 +1,5 @@
+.footer {
+  &:hover {
+    color: var(--second-color-dark) !important ;
+  }
+}
