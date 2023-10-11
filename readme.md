@@ -1,3 +1,3 @@
-#romega
+# Ro-mega
 
-## Demo project for David Tatarasanu
+Demo project for David Tatarasanu
