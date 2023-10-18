@@ -69,9 +69,6 @@ const StyledTestimonialsDiv2 = styled.div`
   @media (max-width: 792px) {
     grid-template-columns: repeat(1, 1fr);
   }
-  @media (max-width: 520px) {
-    margin: 0 auto;
-  }
 `;
 const TestimonialComponent = styled.div`
   display: flex;
