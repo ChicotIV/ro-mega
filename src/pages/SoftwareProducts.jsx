@@ -3,12 +3,14 @@ import BuletinInformativ from "../ui/BuletinInformativ";
 import SoftwareProduct from "../ui/SoftwareProduct";
 
 import { useSoftware } from "../hooks/useSoftware";
+import { useEffect } from "react";
 
 const SoftwareProductsDiv = styled.div`
   display: flex;
   padding: 6.4rem;
   gap: 2.4rem;
   max-width: 100vw;
+
   @media (max-width: 1460px) {
     padding: 3.2rem;
   }
@@ -37,7 +39,11 @@ const SoftwareProductsContainer = styled.div`
 `;
 
 function SoftwareProducts() {
-  const { isLoading, software } = useSoftware();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const { software } = useSoftware();
 
   return (
     <SoftwareProductsDiv>

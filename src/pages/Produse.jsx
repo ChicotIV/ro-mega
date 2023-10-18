@@ -11,10 +11,12 @@ const StyledProdusePage = styled.div`
   display: flex;
   padding: 6.4rem;
   gap: 6.4rem;
+  overflow: hidden;
   @media (max-width: 1044px) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2, 1fr;
+    padding: 0;
   }
 `;
 
@@ -24,6 +26,7 @@ const StyledProductCategoryDiv = styled.div`
 
   @media (max-width: 1044px) {
     margin: 0 auto;
+    margin-bottom: 3.2rem;
     grid-row: 1 / 2;
   }
 `;
@@ -72,11 +75,11 @@ function Produse() {
   return (
     <div>
       <StyledProdusePage>
-        <BuletinInformativ className="0" />
+        <BuletinInformativ />
         <animated.div style={{ ...springs }}>
-          <StyledProductCategoryDiv className="1">
-            <ProductLinkContainer className="2">
-              <NavLink to="/produse/software" className="3">
+          <StyledProductCategoryDiv>
+            <ProductLinkContainer>
+              <NavLink to="/produse/software">
                 <ProductLinkImage src="/images/software-560x560.png"></ProductLinkImage>
               </NavLink>
               <ProductLink to="/produse/software">

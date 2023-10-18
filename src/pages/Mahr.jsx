@@ -12,9 +12,7 @@ function Mahr() {
 
   function list() {
     return (
-      <ul
-        style={{ fontSize: "1.3rem", marginLeft: "1.3rem", maxWidth: "40vw" }}
-      >
+      <ul style={{ fontSize: "1.3rem", margin: "0 auto", maxWidth: "40vw" }}>
         <li>
           Scule de mână: șublere, micrometre, comparatoare, traductori
           inductivi, truse pentru alezaje, etaloane etc

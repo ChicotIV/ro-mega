@@ -91,6 +91,7 @@ function StyledApp() {
           <Route path="branduri/matrix" element={<Matrix />} />
           <Route path="branduri/ultraprazision" element={<UltraPrazision />} />
           <Route path="branduri/dk" element={<DK />} />
+
           <Route />
 
           <Route path="promotii" element={<Promotii />} />

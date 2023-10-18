@@ -27,7 +27,7 @@ function Wenzel() {
 
   function videosArray() {
     const array = [
-      <div style={{ width: "560px", height: "315px" }}>
+      <div style={{ maxWidth: "560px", maxHeight: "315px" }}>
         <iframe
           width="560"
           height="315"

@@ -18,6 +18,7 @@ const Subheading = styled.h2`
 const Button = styled(NavLink)`
   background-color: #fff;
   color: #777;
+  margin-bottom: 0.5rem;
 
   &::after {
     background-color: #fff;
@@ -33,8 +34,12 @@ const Button = styled(NavLink)`
     font-weight: 500;
     position: relative;
     transition: all 0.3s;
-    @media (max-width: 352px) {
+
+    @media (max-width: 768px) {
       padding: 0.4rem;
+    }
+    @media (max-width: 1068px) {
+      padding: 0.8rem;
     }
   }
 

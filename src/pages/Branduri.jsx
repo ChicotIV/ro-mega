@@ -113,7 +113,9 @@ const BrandContainer = styled.div`
   justify-content: center;
 `;
 
-const StyledImg = styled.img``;
+const StyledImg = styled.img`
+  margin: 0 auto;
+`;
 
 const StyledH2 = styled.h2`
   font-size: 1.8rem;

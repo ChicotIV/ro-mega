@@ -7,9 +7,8 @@ import Slider from "react-slick";
 
 const StyledSliderContainer = styled.div`
   padding: 2.5rem;
-  width: 35rem;
-  height: 35rem;
-  margin: 0 auto;
+  max-width: 40rem;
+  max-height: 35rem;
 `;
 
 const StyledDiv = styled.div`
@@ -17,38 +16,14 @@ const StyledDiv = styled.div`
   height: min-content;
 `;
 
-const LeftAr = styled.div`
-  &::before {
-    font-size: 30px;
-
-    color: white;
-    height: 20px;
-    width: 20px;
-    background-color: var(--text-color-dark);
-    padding: 0.3rem;
-    border: 1px solid;
-  }
-`;
-const RightAr = styled.div`
-  &::before {
-    font-size: 30px;
-    color: white;
-    height: 20px;
-    width: 20px;
-    background-color: var(--text-color-dark);
-    padding: 0.3rem;
-  }
-`;
-
 function CarouselWithZoom({ images }) {
   const settings = {
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-
-    prevArrow: <LeftAr />,
-    nextArrow: <RightAr />,
+    dots: true,
+    arrows: false,
   };
 
   const imageArray = images.split(",");

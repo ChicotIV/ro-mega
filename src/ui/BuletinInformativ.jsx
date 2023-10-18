@@ -16,7 +16,8 @@ const StyledDivAfterSubscribe = styled.div`
   height: 15rem;
   border-radius: 0.5rem;
 
-  margin-bottom: 0;
+  margin: 0 auto;
+  margin-top: 3.2rem;
 `;
 
 const StyledNewsletterContainer = styled.div`
@@ -35,6 +36,7 @@ const StyledNewsletterContainer = styled.div`
 
   @media (max-width: 1044px) {
     margin: 0 auto;
+    margin-top: 3.2rem;
     grid-row: 2 / -1;
   }
 `;

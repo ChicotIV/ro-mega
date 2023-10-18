@@ -14,6 +14,7 @@ const StyledHeader = styled.h1`
   @media (max-width: 512px) {
     /* padding: 0; */
     margin: 0 auto;
+
     align-self: center;
     justify-self: center;
   }

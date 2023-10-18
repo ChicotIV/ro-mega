@@ -11,6 +11,15 @@ import MediaQuery from "react-responsive";
 const StyledAboutPage = styled.div`
   padding: 6.4rem;
   max-width: 100vw;
+  overflow: hidden;
+  @media (max-width: 769px) {
+    padding-top: 1rem;
+    margin: 0 auto;
+  }
+  @media (max-width: 581px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 `;
 
 const StyledSliderContainer = styled.div`
@@ -18,8 +27,8 @@ const StyledSliderContainer = styled.div`
 `;
 
 const StyledSlide = styled.div`
-  height: 75vh;
-  width: 75vw;
+  max-height: 75vh;
+  max-width: 75vw;
 `;
 
 const StyledH1 = styled.h1`
@@ -111,6 +120,10 @@ const StyledPerksText = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  @media (max-width: 589px) {
+    max-width: 100vw;
+    list-style-type: none;
+  }
 `;
 
 const StyledPerksTextItem = styled.li``;
@@ -130,7 +143,8 @@ const ManagementDivLeftContainer = styled.div`
   flex-direction: column;
   gap: 1.5rem;
   align-items: center;
-  width: 400px;
+  max-width: 100vw;
+  margin: 0 1rem 0 1rem;
 `;
 
 const ImgContainer = styled.div`
@@ -139,6 +153,10 @@ const ImgContainer = styled.div`
   height: 266px;
   width: 400px;
   background-position: center;
+
+  @media (max-width: 437px) {
+    width: 300px;
+  }
 `;
 
 const ManagementDivLeftH1 = styled.h3`

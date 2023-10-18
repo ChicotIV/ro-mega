@@ -7,6 +7,10 @@ const GaleryContainer = styled.div`
   grid-template-rows: repeat(2, 1fr);
   height: 60vh;
   overflow: hidden;
+  margin-bottom: 6rem;
+  @media (max-width: 1481px) {
+    margin-top: 6rem;
+  }
 
   @media (max-width: 1076px) {
     grid-template-columns: repeat(2, 1fr);

@@ -14,6 +14,10 @@ const StyledFooter = styled.footer`
   background-color: var(--text-color-dark);
   margin-bottom: 0;
   width: 100%;
+
+  @media (max-width: 441px) {
+    justify-content: space-between;
+  }
 `;
 
 const StyledLogoText = styled.div`

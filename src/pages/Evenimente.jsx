@@ -12,13 +12,21 @@ const StyledEvenimenteDiv = styled.div`
   padding: 6.4rem;
   margin: 0 auto;
   gap: 6rem;
-  max-width: 100vw;
+
+  overflow: hidden;
 `;
 
 const Eveniment = styled.div``;
 
 const Img = styled.img`
   margin-bottom: 3.2rem;
+  max-width: 100%;
+  @media (max-width: 428px) {
+    max-width: 120%;
+  }
+  @media (max-width: 380px) {
+    max-width: 140%;
+  }
 `;
 
 const Header = styled.h1`
@@ -37,7 +45,7 @@ function Evenimente() {
     from: { x: -1000 },
     to: { x: 0 },
   });
-  const { isLoading, evenimente } = useEvenimente();
+  const {  evenimente } = useEvenimente();
 
   return (
     <>

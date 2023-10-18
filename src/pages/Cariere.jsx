@@ -80,7 +80,7 @@ function Cariere() {
   async function uploadCv(e) {
     let file = e.target.files[0];
 
-    const { data, error } = await supabase.storage
+    const { data } = await supabase.storage
       .from("uploads")
       .upload(`${nume} CV`, file, {
         cacheControl: "3600",

@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { useState } from "react";
+import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const StyledContainer = styled.div`
@@ -37,7 +37,11 @@ const StyledButton = styled.button`
 `;
 
 function SoftwareProduct({ software }) {
-  const { id, createdAt, name, description, images } = software;
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const { name, images } = software;
   const imageArray = images.split(",");
 
   return (

@@ -16,6 +16,7 @@ import { TbDiscountCheck } from "react-icons/tb";
 import { BsTelephone } from "react-icons/bs";
 import { AiOutlineForward } from "react-icons/ai";
 import MediaQuery from "react-responsive";
+import { useEffect } from "react";
 
 const StyledNavLink = styled(NavLink)`
   &:link,
@@ -34,7 +35,7 @@ const StyledNavLink = styled(NavLink)`
 `;
 
 const Background = styled.div`
-  min-height: 100%;
+  min-height: 100rem;
   width: 100%;
   left: 0;
   top: 0;
@@ -60,6 +61,10 @@ const CloseButton = styled.div`
 `;
 
 function ModalWindow({ showModal, setShowModal }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Background>
       <Navigation onClick={() => setShowModal(!showModal)}>
@@ -79,6 +84,7 @@ function ModalWindow({ showModal, setShowModal }) {
             <AiFillCloseCircle size="2.5em" />
           </MediaQuery>
         </CloseButton>
+
         <StyledNavLink to="/">
           <HiOutlineHome />
           <span>Acasa</span>
@@ -91,7 +97,7 @@ function ModalWindow({ showModal, setShowModal }) {
           <HiOutlineInformationCircle />
           <span>Despre noi</span>
         </StyledNavLink>
-        <StyledNavLink>
+        <StyledNavLink to="/branduri">
           <HiOutlineLightBulb />
           <span>Branduri</span>
         </StyledNavLink>
