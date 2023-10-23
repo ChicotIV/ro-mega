@@ -6,19 +6,19 @@ function Slider() {
       bigHeader: "Noi punem tehnologia in mainile tale",
       smallHeader:
         "Asiguram accesibilitatea tehnologiei celor ce au nevoie de ea",
-      url: "http://localhost:3000/images/cnc-machine.jpg",
+      url: "/images/cnc-machine.jpg",
       title: "CNC Machine",
     },
     {
       bigHeader: "Credem cu tarie in valoarea tehnologiei si a cunoasterii",
       smallHeader: "Puterea sta in cunoastere",
-      url: "http://localhost:3000/images/another-cnc.jpeg",
+      url: "/images/another-cnc.jpeg",
       title: "CNC Machine",
     },
     {
       bigHeader: "",
       smallHeader: "",
-      url: "http://localhost:3000/images/3rd-cnc-machine.jpg",
+      url: "/images/3rd-cnc-machine.jpg",
       title: "CNC Machine",
     },
   ];
